@@ -77,7 +77,7 @@ The 2651 PCI UART (Programmable Communications Interface, Universal Asynchronous
     TxCN │9            20│ BRCLK
       A1 │10           19│ TxD   
      CEN │11           18│ TxEMTN_DSCHGN
-       A0│12           17│ CTSN  
+      A0 │12           17│ CTSN  
      RWN │13           16│ DCDN   
   RxRDYN │14           15│ TxRDYN   
          └───────────────┘
@@ -85,7 +85,6 @@ The 2651 PCI UART (Programmable Communications Interface, Universal Asynchronous
 
 ### Pin Descriptions of the 2651 PCI UART chip
 
----------------------------------------------------------------------------------
 | Pin Number | Name            | Type    | Description                          |
 |------------|-----------------|---------|--------------------------------------|
 | 1          | D2              | In/Out  | Data Bit 2                           |
@@ -96,7 +95,7 @@ The 2651 PCI UART (Programmable Communications Interface, Universal Asynchronous
 | 6          | D5              | In/Out  | Data Bit 5                           |
 | 7          | D6              | In/Out  | Data Bit 6                           |
 | 8          | D7              | In/Out  | Data Bit 7                           |
-| 9          | TxCN            | In      | Transmit Clock  (Active Low)         |
+| 9          | TxCN            | In/Out  | Transmit Clock  (Active Low)         |
 | 10         | A1              | In      | Address Bit 1                        |
 | 11         | CEN             | In      | Chip Enable  (Active Low)            |
 | 12         | A0              | In      | Address Bit 0                        |
@@ -112,11 +111,12 @@ The 2651 PCI UART (Programmable Communications Interface, Universal Asynchronous
 | 22         | DSRN            | In      | General Purpose Input (Active Low)   |
 | 23         | RTSN            | Out     | Request To Send (Active Low)         |
 | 24         | DTRN            | Out     | Data Terminal Ready (Active Low)     |
-| 25         | RxCN            | In      | Receiver Clock  (Active Low)         |
+| 25         | RxCN            | In/Out  | Receiver Clock  (Active Low)         |
 | 26         | Vcc             | -       | 5V Positive Supply                   |
 | 27         | D0              | In/Out  | Data Bit 0                           |
 | 28         | D1              | In/Out  | Data Bit 1                           |
----------------------------------------------------------------------------------
+
+  > **NOTE:** The RxCN and TxCN pins have short circuit protection in output mode (max. CL = 100pF)
 
 ### Register Descriptions for the 2651 PCI UART chip
 

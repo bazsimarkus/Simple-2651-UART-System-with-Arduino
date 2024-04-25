@@ -18,7 +18,7 @@
  *    TxCN │9            20│ BRCLK
  *      A1 │10           19│ TxD   
  *     CEN │11           18│ TxEMTN_DSCHGN
- *       A0│12           17│ CTSN  
+ *      A0 │12           17│ CTSN  
  *     RWN │13           16│ DCDN   
  *  RxRDYN │14           15│ TxRDYN   
  *         └───────────────┘
